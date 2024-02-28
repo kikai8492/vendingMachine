@@ -2,13 +2,11 @@ class vendingMachine
   def initialize
     
   end
-end
 
-class money < vendingMachine
+  def money
+    @money = [10,50,100,1000]
+  end
 
-end
-
-class drink < vendingMachine
   def initialize
     @juices = [{name: "コーラ", price: 150, stock: 5},
                {name: "水", price: 100, stock: 5},
